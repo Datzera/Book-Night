@@ -22,10 +22,11 @@
             </nav>
     
             <div class="login">
-                <a class="palavras" href="cadastro.html">Cadastre-se</a>
-                <a class="palavras" href="login.html">Login</a>
-                <a href="carrinho.html"><img src="carrinho.png" alt="carrinho"></a>
-            </div>
+                <a id="cadastroLink" class="palavras" href="cadastro.html">Cadastre-se</a>
+                <a id="loginLink" class="palavras" href="login.html">Login</a>
+                <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
+                <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
+            </div>            
     
         </header>
 
@@ -51,6 +52,8 @@
             </section>
         </main>
 
+        <script src="scriptbotoes.js"></script>
+        
     </body>
 </html>
 <!--lembrar de estlizar onde vai ficar os cursos tranfomar 
