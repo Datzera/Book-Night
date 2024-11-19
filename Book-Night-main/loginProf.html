@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Professor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formatoProf.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="index.html"><img src="logo2.png" alt="SkillBoost Logo"></a>
+            <h1>SkillBoost</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="listaCursos.html">Cursos</a></li>
+                <li><a href="cadastroVendedor.html">Cadastre-se como <bold>Professor</bold></a></li>
+                <li><a href="cadastroAluno.html">Cadastre-se como Aluno</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="loginAluno.html">Login Aluno</a>
+            <a href="loginProf.html">Login Professor</a>
+        </div>
+    </header>
+    <div class="logar">
+        <h2>Login</h2>
+        <form method="post" action="validadorProfessor.jsp">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="username" placeholder="Escreva o seu Usuário" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Escreva a sua senha" required>
+
+            <button type="submit">Entrar</button>
+            <p>Não é cadastrado ainda? <a href="cadastroAluno.html" class="button">Clique aqui</a></p>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; Skillboost. Site feito por Caio Abner e Davi Miguel</p>
+    </footer>
+</body>
+
+</html>
