@@ -10,17 +10,27 @@
         <header>
             <div class="logo">
                 <a href="index.html"><img src="logo2.png" alt="SkillBoost Logo"></a>
-                <h2>Carrinho De Compras</h2>
+    
+                <h1>Book Night</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="inicioAluno.jsp?CPFCliente=<%= CPFCliente %>">Início</a></li>
-                    <li><a href="listaCursos.jsp" style="padding-right: 10ch">Cursos</a></li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li></li>
                 </ul>
             </nav>
+    
+            <div class="login">
+                <a id="cadastroLink" class="palavras" href="cadastro.html">Cadastre-se</a>
+                <a id="loginLink" class="palavras" href="login.html">Login</a>
+                <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
+                <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
+            </div>            
+    
         </header>
 
-        <main id="conteudo" style="padding-top: 100px;">
+        <main id="conteudo" style="padding-top: 30ch; padding-left: 10ch;">
             <section class="carrinho">
                 <h2>Seu Carrinho de Compras:</h2>
 
@@ -28,7 +38,7 @@
                     <h3>Total: R$</h3>
                 </div>
 
-                <form action="finalizarCompra.jsp" method="POST">
+                <form action="" method="POST">
                     <button type="submit" class="finalizar">Finalizar Compra</button>
                 </form>
                 <br class="espaço">
@@ -42,6 +52,8 @@
             </section>
         </main>
 
+        <script src="scriptbotoes.js"></script>
+        
     </body>
 </html>
 <!--lembrar de estlizar onde vai ficar os cursos tranfomar 

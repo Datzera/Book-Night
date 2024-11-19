@@ -21,16 +21,17 @@
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="listaCursos.html">Livros</a></li>
+                <li><a href="livros.html">Livros</a></li>
                 <li></li>
             </ul>
         </nav>
 
         <div class="login">
-            <a class="palavras" href="cadastroAluno.html">Cadastre-se</a>
-            <a class="palavras" href="loginAluno.html">Login</a>
-            <a href="loginAluno.html"><img src="carrinho.png" alt="carrinho"></a>
-        </div>
+            <a id="cadastroLink" class="palavras" href="cadastro.html">Cadastre-se</a>
+            <a id="loginLink" class="palavras" href="login.html">Login</a>
+            <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
+            <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
+        </div>             
 
     </header>
 
@@ -60,6 +61,9 @@
     <footer>
         <p>&copy; Book Night. Site feito por Caio Abner e Davi Miguel</p>
     </footer>
+
+    <script src="scriptbotoes.js"></script>
+
 </body>
 
 </html>
