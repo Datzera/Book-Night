@@ -16,11 +16,25 @@ function exibirLivrosNacionais() {
                 livroDiv.innerHTML = `
                     <h3>${livro.nome}</h3>
                     <p>Preço: R$ ${livro.preco}</p>
-                    <button>Adicionar ao Carrinho</button>
-                `;
-                listaLivros.appendChild(livroDiv);
-            });
-        }
+                    <button onclick="adicionarAoCarrinho('${livro.nome}', ${livro.preco})">Adicionar ao Carrinho</button>
+                    `;
+            listaLivros.appendChild(livroDiv);
+        });
+    }
+}
+}
+
+function adicionarAoCarrinho(nome, preco) {
+    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    
+    const livroExistente = carrinho.find(livro => livro.nome === nome);
+    if (!livroExistente) {
+        carrinho.push({ nome, preco });
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        alert("Livro adicionado ao carrinho.")
+    }
+    else {
+        alert("Este livro já está no carrinho.")
     }
 }
 
