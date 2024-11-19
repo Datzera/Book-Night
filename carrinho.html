@@ -10,17 +10,26 @@
         <header>
             <div class="logo">
                 <a href="index.html"><img src="logo2.png" alt="SkillBoost Logo"></a>
-                <h2>Carrinho De Compras</h2>
+    
+                <h1>Book Night</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="inicioAluno.jsp?CPFCliente=<%= CPFCliente %>">Início</a></li>
-                    <li><a href="listaCursos.jsp" style="padding-right: 10ch">Cursos</a></li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li></li>
                 </ul>
             </nav>
+    
+            <div class="login">
+                <a class="palavras" href="cadastro.html">Cadastre-se</a>
+                <a class="palavras" href="login.html">Login</a>
+                <a href="carrinho.html"><img src="carrinho.png" alt="carrinho"></a>
+            </div>
+    
         </header>
 
-        <main id="conteudo" style="padding-top: 100px;">
+        <main id="conteudo" style="padding-top: 30ch; padding-left: 10ch;">
             <section class="carrinho">
                 <h2>Seu Carrinho de Compras:</h2>
 
@@ -28,7 +37,7 @@
                     <h3>Total: R$</h3>
                 </div>
 
-                <form action="finalizarCompra.jsp" method="POST">
+                <form action="" method="POST">
                     <button type="submit" class="finalizar">Finalizar Compra</button>
                 </form>
                 <br class="espaço">
