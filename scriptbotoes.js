@@ -16,14 +16,23 @@ function verificarLogin() {
         loginLink.style.display = 'inline-block';
         carrinhoLink.style.display = 'none';
         logoutLink.style.display = 'none';
+
+        const isCarrinhoPage = window.location.pathname.includes('carrinho.html');
+        if (isCarrinhoPage) {
+            alert('Você precisa estar logado para acessar esta página. Redirecionando para a página de login.');
+            setTimeout(() => {
+                window.location.href = 'login.html';
+            }, 2000);
+        }
     }
 }
 
 function realizarLogout() {
     localStorage.removeItem('usuarioLogado');
     localStorage.removeItem('nomeUsuarioLogado');
+    localStorage.removeItem('carrinho'); 
     alert('Você saiu da sua conta.');
-    window.location.reload();
+    window.location.href = 'index.html';
 }
 
 document.addEventListener('DOMContentLoaded', verificarLogin);

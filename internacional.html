@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Livros Nacionais - Book Night</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <div class="logo">
@@ -30,30 +28,22 @@
             <a id="loginLink" class="palavras" href="login.html">Login</a>
             <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
             <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
-        </div>        
+        </div>
     </header>
 
-    <div class="logar" style="padding-top: 25ch; padding-left: 10ch;">
-        <h2>Login</h2>
-        <form id="formLogin">
-            <label for="cpf">CPF</label>
-            <input type="text" id="cpf" name="cpf" placeholder="Escreva o seu CPF" required>
-        
-            <label for="password">Senha</label>
-            <input type="password" id="password" name="password" placeholder="Escreva a sua senha" required>
-        
-            <button type="submit">Entrar</button>
-            <p>Não é cadastrado ainda? <a href="cadastro.html" class="button">Clique aqui</a></p>
-        </form>
-    </div>
+    <main>
+        <section id="livros" class="cursos" style="padding-top: 25ch;">
+            <h2>Livros Internacionais</h2>
+            <div id="listaLivros" class="listaLivros"></div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; Skillboost. Site feito por Caio Abner e Davi Miguel</p>
+        <p>&copy; Book Night. Site feito por Caio Abner e Davi Miguel</p>
     </footer>
 
-    <script src="login.js"></script>
+    <script src="livros.js"></script>
+    <script src="internacional.js"></script>
     <script src="scriptbotoes.js"></script>
-
 </body>
-
 </html>
