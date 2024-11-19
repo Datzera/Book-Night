@@ -26,32 +26,33 @@
             <a id="loginLink" class="palavras" href="login.html">Login</a>
             <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
             <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
-        </div>        
+        </div>
     </header>
 
-    <div class="logar" style="padding-top: 25ch; padding-left: 10ch;">
-        <h2>Cadastro</h2>
-        <form id="formCadastro">
-            <label for="cpf_cliente">CPF</label>
-            <input type="text" id="cpf_cliente" name="cpf_cliente" placeholder="Digite o seu CPF" required>
+    <div class="formulario">
+        <div class="logar">
+            <h2>Cadastro</h2>
+            <form id="formCadastro">
+                <label for="cpf_cliente">CPF</label>
+                <input type="text" id="cpf_cliente" name="cpf_cliente" placeholder="Digite o seu CPF" required>
 
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" placeholder="Digite a sua senha" required>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite a sua senha" required>
 
-            <label for="nome">Nome Completo</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
-            <button type="submit">Cadastrar</button>
-        </form>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
     </div>
-
     <footer>
         <p>&copy; Skillboost. Site feito por Caio Abner e Davi Miguel</p>
     </footer>
 
     <script src="cadastro.js"></script>
     <script src="scriptbotoes.js"></script>
-    
+
 </body>
 
 </html>
