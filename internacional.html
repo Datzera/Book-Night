@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Night - Livros Online</title>
+    <title>Livros Nacionais - Book Night</title>
     <link rel="stylesheet" href="style.css">
-
-
 </head>
-
 <body>
-
     <header>
         <div class="logo">
             <a href="index.html"><img src="logo2.png" alt="SkillBoost Logo"></a>
-
             <h1>Book Night</h1>
         </div>
         <nav>
@@ -34,39 +28,22 @@
             <a id="loginLink" class="palavras" href="login.html">Login</a>
             <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
             <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
-        </div>             
-
+        </div>
     </header>
 
-    <section id="inicio" class="fds">
-        <h2>Leia os melhores livros!</h2>
-        <p>Escolha entre diversos cursos online e invista em seu futuro.</p>
-    </section>
-
-    <section id="courses" class="cursos">
-        <h2>Livros Populares</h2>
-        <div class="listaCursos">
-            <div class="curso1">
-                <h3>Leitura de Verão (2022) - Emily Henry</h3>
-                <p>Aprenda a programar do zero com os melhores professores.</p>
-            </div>
-            <div class="curso1">
-                <h3>Leitura de Verão (2022) - Emily Henry</h3>
-                <p>Domine ferramentas e técnicas de design.</p>
-            </div>
-            <div class="curso1">
-                <h3>Leitura de Verão (2022) - Emily Henry</h3>
-                <p>Desenvolva habilidades para o mercado digital.</p>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section id="livros" class="cursos" style="padding-top: 25ch;">
+            <h2>Livros Internacionais</h2>
+            <div id="listaLivros" class="listaLivros"></div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; Book Night. Site feito por Caio Abner e Davi Miguel</p>
     </footer>
 
+    <script src="livros.js"></script>
+    <script src="internacional.js"></script>
     <script src="scriptbotoes.js"></script>
-
 </body>
-
 </html>
