@@ -82,24 +82,32 @@ nav a:hover {
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
+
 
 }
 
 
 .login a:hover {
     background-color: #1E3A5F;
+
 }
 
 .fds {
     text-align: center;
     padding: 160px 20px;
     background-color: #0A1A2F;
+    background-image: url('ler2.jpg');
+    /* Substitua por seu caminho de imagem */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área */
+    background-position: center;
+    /* Centraliza a imagem */
     color: #F0F0F0;
     margin-top: 100px;
     border-bottom: 2px solid #123456;
 
 }
+
 
 .fds h2 {
     font-size: 2.5em;
@@ -113,7 +121,7 @@ nav a:hover {
 
 .apresentação {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: #ffffff;
+    color: #F0F0F0;
     padding: 4rem 2rem;
 }
 
@@ -148,7 +156,7 @@ nav a:hover {
     margin-top: 1rem;
     padding: 0.8rem 1.5rem;
     background: #2f89e2;
-    color: #ffffff;
+    color: #F0F0F0;
     font-size: 1rem;
     text-decoration: none;
     border-radius: 4px;
@@ -172,7 +180,9 @@ nav a:hover {
 .cursos h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #1E90FF;
+    color: #F0F0F0;
+    background-color: #123456;
+    border-radius: 50px;
     letter-spacing: 2px;
 
 }
@@ -235,88 +245,67 @@ nav a:hover {
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-section#livros {
-    padding: 50px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-}
 
 
 .listaCursos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
+    grid-auto-rows: auto;
+    /* Altura automática para as linhas */
     gap: 20px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    /* Espaçamento entre os livros */
+    max-width: 1200px;
+    /* Largura máxima da lista */
+    margin: 0 auto;
+    /* Centraliza o contêiner */
+    padding: 20px;
+    justify-content: center;
 }
-
 
 .livro {
-    background-color: #eaeaea;
-    padding: 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    background-color: #123456;
+    color: #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 200px;
-}
-
-.livro:hover {
-    background-color: #dcdcdc;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: auto;
 }
 
 .livro h3 {
     font-size: 1.2em;
-    color: #333;
-    margin: 0 0 10px 0;
+    margin-bottom: 10px;
 }
 
 .livro p {
     font-size: 1em;
-    color: #555;
-    margin: 5px 0;
+    margin-bottom: 15px;
 }
 
 .livro button {
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #1E3A5F;
+    color: F0F0F0;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: auto;
+    transition: background-color 0.3s ease;
 }
 
 .livro button:hover {
-    background-color: #45a049;
+    background-color: #1E90FF;
 }
 
 
 
 .logar {
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(30, 58, 95, 0.4);
     /* Fundo transparente ta bugado*/
-    color: #fff;
+    color: #F0F0F0;
     padding: 30px;
     border-radius: 40px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
     text-align: center;
     width: 300px;
     margin-top: 100px;
@@ -346,7 +335,7 @@ h2 {
     width: 100%;
     padding: 10px;
     background-color: #123456;
-    color: #fff;
+    color: #F0F0F0;
     border: none;
     border-radius: 4px;
     font-size: 1em;
@@ -363,7 +352,7 @@ h2 {
     width: 100%;
     padding: 10px;
     background-color: #123456;
-    color: #fff;
+    color: #F0F0F0;
     border: none;
     border-radius: 4px;
     font-size: 1em;
@@ -381,21 +370,31 @@ h2 {
     background-color: #123456;
 }
 
+.cadaslogin {
+    background-image: url('céu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 section#livros {
     padding: 400px;
     background-color: #0A1A2F;
     border-radius: 8px;
-
+    background-image: url('rain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-h2 {
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
-}
 
 /* eu acho q deve ter uns 3 seletor por id nesse codigo xd */
-#listaLivros {
+.listaCursos {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -403,7 +402,7 @@ h2 {
 
 
 .livro {
-    background-color: #608cb8;
+    background-color: #1E3A5F;
     margin: 15px 0;
     padding: 15px;
     border-radius: 5px;
@@ -411,25 +410,25 @@ h2 {
 }
 
 .livro:hover {
-    background-color: #2814dd;
+    background-color: #A3BED4;
 }
 
 .livro h3 {
     font-size: 1.5em;
-    color: #fff;
+    color: #F0F0F0;
     margin: 0 0 10px 0;
 }
 
 .livro p {
     font-size: 1em;
-    color: #555;
+    color: #F0F0F0;
     margin: 5px 0;
 }
 
 .livro button {
     padding: 8px 16px;
     background-color: #1E90FF;
-    color: white;
+    color: #F0F0F0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -452,4 +451,83 @@ footer {
     border-top: 2px solid #1E3A5F;
     margin-top: auto;
     width: 100%;
+}
+
+
+
+.carrinho {
+    background-color: #0A1A2F;
+    color: #F0F0F0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.carrinho h2 {
+    font-size: 2rem;
+    color: #1E90FF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+#listaCarrinho {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #123456;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+
+.total {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.total h3 {
+    font-size: 1.5rem;
+    color: #A3BED4;
+}
+
+button.finalizar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F0F0F0;
+    background-color: #1E3A5F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+}
+
+button.finalizar:hover {
+    background-color: #1E90FF;
+    transform: scale(1.05);
+}
+
+hr#linhazinha {
+    border: none;
+    border-top: 2px solid #123456;
+    margin: 20px 0;
+}
+
+
+
+a.palavras {
+    color: #F0F0F0;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a.palavras:hover {
+    color: #1E90FF;
 }
