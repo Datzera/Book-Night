@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Night - Livros Online</title>
+    <title>Livros Nacionais - Book Night</title>
     <link rel="stylesheet" href="style.css">
-
-
 </head>
-
 <body>
-
     <header>
         <div class="logo">
             <a href="index.html"><img src="logo2.png" alt="SkillBoost Logo"></a>
-
             <h1>Book Night</h1>
         </div>
         <nav>
@@ -35,20 +29,21 @@
             <a id="carrinhoLink" href="carrinho.html" style="display: none;"><img src="carrinho.png" alt="Carrinho"></a>
             <a id="logoutLink" href="#" style="display: none;" onclick="realizarLogout()">Logout</a>
         </div>
-
     </header>
 
-    <section id="inicio" class="fds">
-        <h2>Book Night!</h2>
-        <p>Ilumine suas noites com as melhores histórias</p>
-    </section>
+    <main>
+        <section id="livros" class="cursos" style="padding-top: 25ch;">
+            <h2>Livros Nacionais</h2>
+            <div id="listaLivros" class="listaLivros"></div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; Book Night. Site feito por Caio Abner e Davi Miguel</p>
     </footer>
 
+    <script src="livros.js"></script>
+    <script src="nacional.js"></script>
     <script src="scriptbotoes.js"></script>
-
 </body>
-
 </html>
