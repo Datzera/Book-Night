@@ -34,6 +34,7 @@ Este projeto foi desenvolvido com a colaboração de:
 
 - [Caio Abner](https://github.com/CaioaPy)
 - [Datzera](https://github.com/Datzera)
+- [Lucas Vinícius](https://github.com/Luchaotic)
 
 ## ✨ Sobre o Book Night
 
